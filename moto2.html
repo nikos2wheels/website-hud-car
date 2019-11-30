@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="car.html">
+                    <a class="nav-link link text-white display-4" href="car2.html">
                         Cars
                     </a>
                 </li>
@@ -91,7 +91,7 @@
   <div class="container align-center">
     <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">Technology</h2>
     <div align="justify">
-    <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">Current helmet HUDs attempt to cram all components on the helmet. A groundbreaking optical system uses small optics on the helmet while the picture generation unit (PGU) is on the motorycle dash. A novel passive optical image stabilization ensures shake-free virtual images.
+    <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">Current helmet HUDs attempt to cram all components on the helmet. REBKIN developed a groundbreaking optical system that uses only small optics on the helmet while the picture generation unit (PGU) is on the motorycle dash. A novel passive optical image stabilization ensures steady virtual images.
     </h3>
     </div>
 
@@ -110,27 +110,23 @@
 	  </div>
 
 	  <div class="w3-display-container mySlides">
-	    <img src="assets/images/moto_illustration_on-demand01.png" id="gif4" style="width:100%">
+	    <img src="assets/images/moto_illustration_on-demand.gif" id="gif4" style="width:100%">
 	  </div>
 
 	  <div class="w3-display-container mySlides">
-	    <img src="assets/images/moto_illustration_on-demand02.png" id="gif5" style="width:100%">
+	    <img src="assets/images/moto_illustration_focal-distance.png" id="gif5" style="width:100%">
 	  </div>
 
 	  <div class="w3-display-container mySlides">
-	    <img src="assets/images/moto_illustration_focal-distance.png" id="gif6" style="width:100%">
+	    <img src="assets/images/moto_illustration_without-POIS.gif" id="gif6" style="width:100%">
 	  </div>
 
 	  <div class="w3-display-container mySlides">
-	    <img src="assets/images/moto_illustration_without-POIS.gif" id="gif7" style="width:100%">
+	    <img src="assets/images/moto_illustration_with-POIS.gif" id="gif7" style="width:100%">
 	  </div>
 
 	  <div class="w3-display-container mySlides">
-	    <img src="assets/images/moto_illustration_with-POIS.gif" id="gif8" style="width:100%">
-	  </div>
-
-	  <div class="w3-display-container mySlides">
-	    <img src="assets/images/moto_illustration_compact.png" id="gif9" style="width:100%">
+	    <img src="assets/images/moto_illustration_compact.png" id="gif8" style="width:100%">
 	  </div>
 
 	  
@@ -149,7 +145,6 @@
 	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(6)">6</button> 
 	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(7)">7</button> 
 	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(8)">8</button> 
-	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(9)">9</button> 
 	    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
 	  </div>
 	</div>
@@ -201,10 +196,12 @@ function showDivs(n) {
     x[i].style.display = "none";  
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
+//    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" w3-red", " w3-light-grey");
   }
   x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
+//  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" w3-light-grey", " w3-red");
 }
 </script>
 
