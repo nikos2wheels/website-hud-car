@@ -1144,7 +1144,7 @@ section.lazy-placeholder:after {
 
 .hero-image {
   background-image: url("../../../assets/images/motorcyclePOV_HUD_small.gif");
-  height: 645px;
+  height: 800px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
