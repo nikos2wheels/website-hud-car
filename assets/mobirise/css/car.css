@@ -1111,8 +1111,9 @@ section.lazy-placeholder:after {
 }
 .cid-rGS1tHZCuj {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
   background-image: url("../../../assets/images/driverPOV_animation.gif");
+  height: 800px;
 }
 .cid-rGS1tHZCuj .icons-media-container {
   display: flex;
