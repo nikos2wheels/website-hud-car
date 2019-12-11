@@ -19,14 +19,19 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/car.css"><link rel="stylesheet" href="assets/mobirise/css/car.css" type="text/css">
   
-  
-<script type="text/javascript">
-<!--
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+}
+</style>
+
+
+
+<!-- script type="text/javascript">
 if (screen.width <= 1200) {
 document.location = "index.html";
 }
-//-->
-</script>
+</script -->
 
 
 </head>
@@ -68,7 +73,7 @@ document.location = "index.html";
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="moto.html">
+                    <a class="nav-link link text-white display-4" href="moto2.html">
                       Motorcycles
                     </a>
                 </li>
@@ -105,64 +110,104 @@ document.location = "index.html";
       <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">Technology</h2>
       <div align="justify">
 	<h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
-	  Conventional HUDs are bulky and expensive devices taking up more than 4 liters of valuable dashboard space. A groundbreaking optical system for windshield-type HUDs was developed that drastically shrinks the installation volume while reducing overall cost. The system can be used with existing picture generation units (PGU).&nbsp;
+	  Conventional HUDs are bulky and expensive devices taking up more than 4 liters of valuable dashboard space. REBKIN developed a groundbreaking optical system for windshield-type HUDs that drastically shrinks the installation volume while reducing overall cost. The system can be used with existing picture generation units (PGU).&nbsp;
 	</h3>
-      </div>	
 
 
-      <div id="trigger1"><br/></div>
-      <div id="pin1">
-	<div id="imagesequence">
-	  <img id="myimg"/><br>
+	<div class="w3-content w3-display-container" style="max-width:1500px">
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/car_illustration_conventional.gif" id="gif1" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/car_illustration_volume.gif" id="gif2" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/car_illustration_focus.gif" id="gif3" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/car_illustration_windshield.gif" id="gif4" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/car_illustration_comparison.gif" id="gif5" style="width:100%">
+	  </div>
+	  
 	</div>
+
+	<div class="w3-center">
+	  <div class="w3-section">
+	    <div class="w3-display-left" onclick="plusDivs(-1)"><img src="assets/images/left-click.png" style="width:35px"></div>
+	    <div class="w3-display-right" style="transform: scaleX(-1);" onclick="plusDivs(1)"><img src="assets/images/left-click.png" style="width:35px"></div>
+	    <button class="w3-button w3-light-grey " onclick="plusDivs(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(1)">1</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(2)">2</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(3)">3</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(4)">4</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(5)">5</button> 
+	    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+	  </div>
+	</div>
+
+
       </div>
+      
+<script type="text/javascript">
 
-            <div class="row justify-content-center">
-                <div class="card p-4 col-12 col-md-6 col-lg-4">
-                    <div class="media pb-3">
-		       <img src="assets/images/box3D-dimensions-icon.png" height="60" alt="mbri-star">
-                        <div class="media-body">
-                            <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
-                                &nbsp;&nbsp;&nbsp;Volume</h4>
-                        </div>
-                    </div>                
-                    <div class="card-box align-left">
-                        <p class="mbr-text mbr-fonts-style display-7">
-                           The proprietary system takes up only 1/10th of the dashboard volume compared to a conventional HUD system.</p>
-                    </div>
-                </div>
+// reset an animated gif to start at first image without reloading it from server.
+// Note: if you have the same image on the page more than ones, they all reset.
+function resetGifs(n) {
+    for (i = 1; i <= n; i++) {
+	var id = "gif"+i;
+	var img = document.getElementById(id);
+	var imageUrl = img.src;
+	img.src = "";
+	img.src = imageUrl;
+    }
+};
 
-                <div class="card p-4 col-12 col-md-6 col-lg-4">
-                <div class="media pb-3">
-		    <img src="assets/images/focus-icon.png" height="60" alt="mbri-star">
-                    <div class="media-body">
-                        <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
-                                &nbsp;&nbsp;&nbsp;Focal point</h4>
-                    </div>
-                </div>
-                    <div class="card-box align-left">
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            The virtual image appears to be floating up to 6m from the driver's eyes. The driver doesn't have to shift focus from the road.</p>
-                    </div>
-                </div>
+</script>
 
-                <div class="card p-4 col-12 col-md-6 col-lg-4">
-                <div class="media pb-3">
-		    <img src="assets/images/dollar-signs-icon.png" height="60" alt="mbri-star">
-                    <div class="media-body">
-                        <h4 class="card-title py-2 align-left mbr-fonts-style display-5">
-                            &nbsp;&nbsp;&nbsp;&nbsp;Cost</h4>
-                    </div>
-                </div>
-                    <div class="card-box align-left">
-                        <p class="mbr-text mbr-fonts-style display-7">
-                           The large focal distance naturally eliminates the ghost image. A conventional windshield can be used reducing the cost of the HUD.
-                        </p>
-                    </div>
-                </div>
 
-                
-            </div>
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+    resetGifs(5);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+    resetGifs(5);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+//    dots[i].className = dots[i].className.replace(" w3-red", "");
+    dots[i].className = dots[i].className.replace(" w3-red", " w3-light-grey");
+  }
+  x[slideIndex-1].style.display = "block";  
+//  dots[slideIndex-1].className += " w3-red";
+  dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" w3-light-grey", " w3-red");
+}
+</script>
+
 
       
     </div>
@@ -264,20 +309,18 @@ var scene0 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 2000}
     <div class="container align-center">
         <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">
             Demo</h2>
-        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5"><div align="justify">The video below illustrates the benefits of the optical system on a car with a <strong>conventional</strong> windshield. Direct reflection of a LED display is on the right, collimated reflection is on the left. The ghost image is <strong>eliminated</strong> and the virtual image appears <strong>4m</strong> outside of the windshield.</h3>
-        <div class="media-container-column">
+        <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5"><div align="justify">The video below illustrates the benefits of the optical system on a car with a <strong style="color:black">regular</strong> windshield. Direct reflection of a LED display is on the right, collimated reflection is on the left. The ghost image is <strong  style="color:black">eliminated</strong> and the virtual image appears <strong style="color:black">4m</strong> outside of the windshield.</h3>
 
 
-	  <div class="mbr-figure" style="width: 100%;">
-	    <video width="1080" autoplay loop controls>
-        <source src="assets/videos/demo_video.mp4">
-        <p class="warning">Your browser does not support HTML5 video.</p>
-</video>
+	  <div class="mbr-figure">
+	    <video width="100%" autoplay loop controls>
+              <source src="assets/videos/demo_video.mp4">
+		<p class="warning">Your browser does not support HTML5 video.</p>
+	    </video>
 
-	    </div>
-	    </div>
+	  </div>
+	</div>
 	    
-        </div>
     </div>
 </section>
 

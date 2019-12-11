@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="assets/theme/css/style.css">
   <link rel="preload" as="style" href="assets/mobirise/css/moto.css"><link rel="stylesheet" href="assets/mobirise/css/moto.css" type="text/css">
   
+ <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   
   
 </head>
@@ -61,7 +62,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="car.html">
+                    <a class="nav-link link text-white display-4" href="car2.html">
                         Cars
                     </a>
                 </li>
@@ -90,82 +91,123 @@
   <div class="container align-center">
     <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">Technology</h2>
     <div align="justify">
-    <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">Current helmet HUDs attempt to cram all components on the helmet. A groundbreaking optical system uses small optics on the helmet while the picture generation unit (PGU) is on the motorycle dash. A novel passive optical image stabilization ensures shake-free virtual images.
+    <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">Current helmet HUDs attempt to cram all components on the helmet. REBKIN developed a groundbreaking optical system that uses only small optics on the helmet while the picture generation unit (PGU) is on the motorycle dash. A novel <strong style="color:black">P</strong>assive <strong style="color:black">O</strong>ptical <strong style="color:black">I</strong>mage <strong style="color:black">S</strong>tabilization (POIS) system ensures steady virtual images.
     </h3>
     </div>
 
-    <div id="trigger1"><br/><br/><br/></div>
-    <div id="pin1">
-      <div id="imagesequence">
-	<img id="myimg"/><br>
+	<div class="w3-content w3-display-container" style="max-width:1500px">
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_conventional.png" id="gif1" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_ray.gif" id="gif2" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_no-batteries.png" id="gif3" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_on-demand.gif" id="gif4" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_focal-distance.png" id="gif5" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_POIS.gif" id="gif6" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_compact.png" id="gif7" style="width:100%">
+	  </div>
+
+	  <div class="w3-display-container mySlides">
+	    <img src="assets/images/moto_illustration_comparison.gif" id="gif8" style="width:100%">
+	  </div>
+
+	  
+	</div>
+
+	<div class="w3-center">
+	  <div class="w3-section">
+	    <div class="w3-display-left" onclick="plusDivs(-1)"><img src="assets/images/left-click.png" style="width:35px"></div>
+	    <div class="w3-display-right" style="transform: scaleX(-1);" onclick="plusDivs(1)"><img src="assets/images/left-click.png" style="width:35px"></div>
+	    <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(1)">1</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(2)">2</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(3)">3</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(4)">4</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(5)">5</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(6)">6</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(7)">7</button> 
+	    <button class="w3-button w3-light-grey demo" onclick="currentDiv(8)">8</button> 
+	    <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+	  </div>
+	</div>
+
+
       </div>
-    </div>
-  </div>
-  
-  
-	      
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>   
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.0/TweenMax.min.js"></script>
-<script>
-var controller = new ScrollMagic.Controller();
+      
+<script type="text/javascript">
 
-  var imgdir = "assets/images/";
-  
-// define images
-var images = [
-    imgdir + "illustration_starting_position.png",
-    imgdir + "illustration_starting_position_PGU.png",
-    imgdir + "illustration_starting_position_PGU_Optics.png",
-    imgdir + "illustration_starting_position_PGU_Optics_VI.png",
-    imgdir + "illustration_starting_position_PGU_Optics_VI.png",
-    imgdir + "illustration_annotations_ray01a.png",
-    imgdir + "illustration_annotations_ray02a.png",
-    imgdir + "illustration_annotations_ray03a.png",
-    imgdir + "illustration_annotations_ray04a.png",
-    imgdir + "illustration_annotations_ray04a.png",
-    imgdir + "illustration_passive.png",
-    imgdir + "illustration_on-demand01.png",
-    imgdir + "illustration_on-demand02.png",
-    imgdir + "illustration_focal-point.png",
-    imgdir + "illustration_shake_animation.gif",
-    imgdir + "illustration_POIS_animation.gif",
-    imgdir + "illustration_compact.png",
-    imgdir + "illustration_compact.png",
-    imgdir + "illustration_compact.png",
-    imgdir + "illustration_compact.png",
-];
+// reset an animated gif to start at first image without reloading it from server.
+// Note: if you have the same image on the page more than ones, they all reset.
+function resetGifs(n) {
+    for (i = 1; i <= n; i++) {
+	var id = "gif"+i;
+	var img = document.getElementById(id);
+	var imageUrl = img.src;
+	img.src = "";
+	img.src = imageUrl;
+    }
+};
 
-
- var obj = {curImg: 0};
-
-// create tween
-var tween = TweenMax.to(obj, 0.5,
-    {
-     curImg: images.length,
-     roundProps: "curImg",             
-     repeat: 0,                                 
-     immediateRender: true,          
-     ease: Linear.easeNone,          
-     onUpdate: function () {
-     $("#myimg").attr("src", images[obj.curImg]); 
-                            }
-     }
- );
-
-// init controller
-var controller = new ScrollMagic.Controller();
-
-// build scene
-var scene0 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 3000})
-                    .setPin("#pin1")
-                    .setTween(tween)
-                    .addTo(controller);
-
-                    var triggerHook = scene0.triggerHook();
-                    scene0.triggerHook(0);
 </script>
+
+
+
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+    resetGifs(9);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+    resetGifs(9);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+//    dots[i].className = dots[i].className.replace(" w3-white", "");
+    dots[i].className = dots[i].className.replace(" w3-red", " w3-light-grey");
+  }
+  x[slideIndex-1].style.display = "block";  
+//  dots[slideIndex-1].className += " w3-white";
+  dots[slideIndex-1].className = dots[slideIndex-1].className.replace(" w3-light-grey", " w3-red");
+}
+</script>
+
+
+    
+  </div>	      
 
 </section>	
 	
@@ -183,15 +225,14 @@ var scene0 = new ScrollMagic.Scene({triggerElement: "#trigger1", duration: 3000}
 
 
 	  <div class="mbr-figure" style="width: 100%;">
-	    <video width="1080" autoplay loop controls>
-        <source src="assets/videos/demo_video_motorcycle.mp4">
-        <p class="warning">Your browser does not support HTML5 video.</p>
-</video>
+	    <video width="100%" autoplay loop controls>
+              <source src="assets/videos/demo_video_motorcycle.mp4">
+		<p class="warning">Your browser does not support HTML5 video.</p>
+	    </video>
 
-	    </div>
-	    </div>
+	  </div>
+	</div>
 	    
-        </div>
     </div>
 </section>
 
